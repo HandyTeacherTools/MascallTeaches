@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Mr. Mascall</title>
+  <meta name="description" content="Learn about Mr. Mascall, Grades 4–6 teacher with the Simcoe County District School Board." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon" aria-hidden="true">🍎</span>
+        Mr. Mascall
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ══ PAGE HERO ══ -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>👨‍🏫 About Mr. Mascall</h1>
+      <p>Grades 4–6 · Simcoe County District School Board</p>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="about-inner">
+
+        <div class="about-avatar">
+          <div class="avatar-circle" aria-hidden="true">👨‍🏫</div>
+          <p>Mr. Mascall<br><span>Grades 4–6 Teacher</span></p>
+        </div>
+
+        <div class="about-text">
+          <h2 class="ruled-heading">Hello, I'm Mr. Mascall</h2>
+          <br>
+          <p>
+            I'm a Grades 4–6 teacher with the Simcoe County District School Board, 
+            passionate about creating engaging, inclusive, and meaningful learning 
+            experiences for my students.
+          </p>
+          <p>
+            This website is designed as a parent hub — a straightforward place where 
+            families can find resources to support learning at home. No logins, no 
+            complexity. Just helpful materials that connect to what we're doing in class.
+          </p>
+          <p>
+            I believe strongly in the home–school partnership. When families are 
+            informed and equipped, students thrive. Whether you're looking for a 
+            reference sheet, a practice activity, or just trying to understand what 
+            your child is learning this term — this is the place to find it.
+          </p>
+          <p>
+            Feel free to reach out through the Contact page if you have questions 
+            about a resource or want to connect. I'm always happy to hear from families.
+          </p>
+
+          <div class="about-tags">
+            <span class="tag">📚 Literacy</span>
+            <span class="tag">🔢 Math</span>
+            <span class="tag">🔬 Science</span>
+            <span class="tag">🌍 Social Studies</span>
+            <span class="tag">🧠 Growth Mindset</span>
+            <span class="tag">🤝 Inclusive Education</span>
+            <span class="tag">🍁 Ontario Curriculum</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ VALUES STRIP ══ -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="ruled-heading" style="text-align:center; margin-bottom: 2.5rem;">What This Site Is For</h2>
+      <div class="quicklinks-grid" style="max-width: 860px; margin: 0 auto;">
+        <div class="quicklink-card" style="cursor:default;">
+          <span class="card-icon">🏠</span>
+          <h3>Home Support</h3>
+          <p>Resources that help parents support learning at home without needing to be an expert</p>
+        </div>
+        <div class="quicklink-card" style="cursor:default;">
+          <span class="card-icon">📥</span>
+          <h3>Free Downloads</h3>
+          <p>All materials are free to download and print — no subscriptions or sign-ups</p>
+        </div>
+        <div class="quicklink-card" style="cursor:default;">
+          <span class="card-icon">🔄</span>
+          <h3>Updated Regularly</h3>
+          <p>New resources are added as units progress throughout the school year</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span aria-hidden="true">🍎</span>
+        Mr. Mascall
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-inner">
+      <p class="footer-copy">
+        © <span id="year"></span> Mr. Mascall · Simcoe County District School Board · mascallteaches.com
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

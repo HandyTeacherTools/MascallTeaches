@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Mr. Mascall</title>
+  <meta name="description" content="Get in touch with Mr. Mascall — Grades 4–6 teacher, Simcoe County District School Board." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍎</text></svg>" />
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="site-header">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon" aria-hidden="true">🍎</span>
+        Mr. Mascall
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ══ PAGE HERO ══ -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>✉️ Get in Touch</h1>
+      <p>Questions about a resource, or just want to connect? I'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-info">
+          <h2 class="ruled-heading">Say Hello</h2>
+          <br>
+          <p>
+            Whether you have a question about a resource, want to suggest something 
+            you'd find helpful, or just want to introduce yourself — please reach out. 
+            I do my best to respond within a couple of school days.
+          </p>
+
+          <div class="contact-note">
+            <span class="note-icon">📌</span>
+            <span>
+              <strong>Please note:</strong> For urgent school matters or anything 
+              related to your child's learning, attendance, or wellbeing, please 
+              contact me directly through the school office or your school's 
+              communication platform. This form is for general website enquiries 
+              and resource suggestions.
+            </span>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3 style="margin-bottom: 1rem; font-size: 1rem;">Other ways to connect:</h3>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span style="font-size: 1.3rem;">🏫</span>
+                <div>
+                  <div style="font-family: var(--font-head); font-weight: 700; font-size: 0.9rem; color: var(--navy);">School Office</div>
+                  <div style="font-size: 0.85rem; color: var(--ink-soft);">Call or visit the school during school hours</div>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span style="font-size: 1.3rem;">📋</span>
+                <div>
+                  <div style="font-family: var(--font-head); font-weight: 700; font-size: 0.9rem; color: var(--navy);">School Communication Platform</div>
+                  <div style="font-size: 0.85rem; color: var(--ink-soft);">Use your school's messaging system for direct messages</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form — wire up to Formspree.io for real submissions -->
+        <div class="contact-form">
+          <h3 style="margin-bottom: 1.25rem; font-size: 1.1rem;">Send a Message</h3>
+          <!-- 
+            TO ENABLE REAL EMAIL DELIVERY:
+            1. Sign up at https://formspree.io (free tier is sufficient)
+            2. Create a form and get your form ID
+            3. Change action="" below to your Formspree endpoint:
+               action="https://formspree.io/f/YOUR_FORM_ID"
+            4. Remove the JS form override in main.js (the submit listener)
+          -->
+          <form action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Sarah Johnson" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option value="">— Select a topic —</option>
+                <option>Question about a resource</option>
+                <option>Resource suggestion</option>
+                <option>Website feedback</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message ✉️</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span aria-hidden="true">🍎</span>
+        Mr. Mascall
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-inner">
+      <p class="footer-copy">
+        © <span id="year"></span> Mr. Mascall · Simcoe County District School Board · mascallteaches.com
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
